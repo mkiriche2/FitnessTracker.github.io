@@ -1,10 +1,13 @@
 let mongoose = require("mongoose");
 let db = require("../models");
+//populate databse with info 
 
 mongoose.connect("mongodb://localhost/workout", {
   useNewUrlParser: true,
   useFindAndModify: false
 });
+
+//type,name, and duration 
 
 let workoutSeed = [
   {
